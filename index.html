@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="محاسبه گر مالیات و عوارض - محاسبه سریع مبلغ واحد با در نظر گرفتن مالیات و عوارض">
+    <title>محاسبه مالیات و عوارض | ابزار محاسبه مبلغ واحد</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>محاسبه‌گر مالیات و عوارض</h1>
+        <p>محاسبه مبلغ هر واحد با در نظر گرفتن مالیات ۱۰٪ و عوارض ۳٪</p>
+    </header>
+    
+    <main>
+        <div class="calculator-container">
+            <div class="input-group">
+                <label for="tax-input">مبلغ کل مالیات و عوارض (تومان):</label>
+                <input type="number" id="tax-input" placeholder="مبلغ را وارد کنید">
+                <i class="fas fa-calculator icon"></i>
+            </div>
+            
+            <div class="input-group">
+                <label for="count-input">تعداد کالا یا واحدها:</label>
+                <input type="number" id="count-input" placeholder="تعداد را وارد کنید">
+                <i class="fas fa-boxes icon"></i>
+            </div>
+            
+            <button id="calculate-btn">محاسبه کن <i class="fas fa-calculator"></i></button>
+            
+            <div class="result-container" id="result-container">
+                <h3>نتیجه محاسبه:</h3>
+                <div class="result-box">
+                    <span>مبلغ هر واحد:</span>
+                    <span id="result-value">0</span>
+                    <span>تومان</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>نحوه محاسبه:</h2>
+            <p>این ابزار مبلغ هر واحد را با در نظر گرفتن مالیات ۱۰٪ و عوارض ۳٪ محاسبه می‌کند.</p>
+            <p>فرمول محاسبه: (مبلغ کل مالیات و عوارض × ۱۰) ÷ تعداد واحدها + (۳٪ × مبلغ اولیه هر واحد)</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2023 ابزارهای محاسباتی مالی | طراحی شده با <i class="fas fa-heart"></i></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
